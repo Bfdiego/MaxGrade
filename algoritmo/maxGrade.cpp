@@ -76,13 +76,13 @@ static void choice1 () {
     vector<int> score;
     int maxTime;
     int exercises;
-    cout << "Introduce la cantidad de ejercicios: ";
+    cout << endl << "Introduce la cantidad de ejercicios: ";
     cin >> exercises;
     for(int i = 1; i <= exercises; i++){
         int exTime, exScore;
-        cout << "Introduce el tiempo que cuesta hacer el ejercicio " << i << ":";
+        cout << endl << "Introduce el tiempo que cuesta hacer el ejercicio " << i << ":";
         cin >> exTime;
-        cout << endl << "Introduce el puntaje del ejercicio " << i << ":"  << endl;
+        cout << endl << "Introduce el puntaje del ejercicio " << i << ":";
         cin >> exScore;
         time.push_back(exTime);
         score.push_back(exScore);
@@ -103,7 +103,7 @@ static void choice1 () {
     int choice2;
     cout << endl << "Espero que le haya servido " << endl;
     cout << "Que desea hacer " << endl;
-    cout << "1. Pregutar de nuevo" << endl;
+    cout << "1. Preguntar de nuevo" << endl;
     cout << "2. Volver al menu" << endl;
     cout << "3. Salir" << endl;
     cout << endl << "Escoge: ";
@@ -127,18 +127,18 @@ static void choice2 () {
     vector<int> score;
     int minScore;
     int topics;
-    cout << "Introduce la cantidad de temas: ";
+    cout << endl << "Introduce la cantidad de temas: ";
     cin >> topics;
     for(int i = 1; i <= topics; i++){
         int toTime, toScore;
         cout << endl << "Introduce el tiempo que toma estudiar el tema " << i << ":";
         cin >> toTime;
-        cout << endl << "Introduce el puntaje que te asegura estudiar el tema " << i << ":" << endl;
+        cout << endl << "Introduce el puntaje que te asegura estudiar el tema " << i << ":";
         cin >> toScore;
         time.push_back(toTime);
         score.push_back(toScore);
     }
-    cout << "Introduce el puntaje minimo para pasar el examen: ";
+    cout << endl << "Introduce el puntaje minimo para pasar el examen: ";
     cin >> minScore;
 
     vector<bool> selectedItems(time.size(), false);
@@ -154,7 +154,7 @@ static void choice2 () {
     int choice3;
     cout << endl << "Espero que le haya servido " << endl;
     cout << "Que desea hacer " << endl;
-    cout << "1. Pregutar de nuevo" << endl;
+    cout << "1. Preguntar de nuevo" << endl;
     cout << "2. Volver al menu" << endl;
     cout << "3. Salir" << endl;
     cout << endl << "Escoge: ";
